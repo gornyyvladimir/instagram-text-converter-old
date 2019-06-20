@@ -40,7 +40,11 @@ function App() {
       </p>
       <div className="wrapper">
         <form className="form">
+          <label className="label" htmlFor="text">
+            Текст, который вы хотите преобразовать
+          </label>
           <textarea
+            id="text"
             className="textarea"
             onChange={handleTextChange}
             value={text}
@@ -53,11 +57,16 @@ function App() {
           </button>
         </form>
         <form className="form">
+          <label className="label" htmlFor="converted-text">
+            Преобразованный текст
+          </label>
           <textarea
+            id="converted-text"
             className="textarea"
             ref={textareaRef}
             onFocus={handleTextareaFocus}
             value={convertedText}
+            placeholder="Здесь будет преобразованный текст"
             rows="5"
             cols="30"
             readOnly
