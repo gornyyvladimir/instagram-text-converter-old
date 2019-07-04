@@ -1,0 +1,26 @@
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: #44bd32;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  transition: opacity 0.3s;
+}
+
+.icon {
+  margin-right: 1em;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
