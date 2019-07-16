@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/instagram-text-converter/static/css/main.c5142100.chunk.css",
+    "main.css": "/instagram-text-converter/static/css/main.bae0b4ee.chunk.css",
     "main.js": "/instagram-text-converter/static/js/main.877e16cf.chunk.js",
     "main.js.map": "/instagram-text-converter/static/js/main.877e16cf.chunk.js.map",
     "runtime~main.js": "/instagram-text-converter/static/js/runtime~main.41b8e63a.js",
@@ -9,10 +9,10 @@
     "static/js/2.89405166.chunk.js": "/instagram-text-converter/static/js/2.89405166.chunk.js",
     "static/js/2.89405166.chunk.js.map": "/instagram-text-converter/static/js/2.89405166.chunk.js.map",
     "index.html": "/instagram-text-converter/index.html",
-    "precache-manifest.1df7e64c3b89b10c7bcc7c299cdf6fb3.js": "/instagram-text-converter/precache-manifest.1df7e64c3b89b10c7bcc7c299cdf6fb3.js",
+    "precache-manifest.d73391b2e1ac9eacf0137a61e9130d92.js": "/instagram-text-converter/precache-manifest.d73391b2e1ac9eacf0137a61e9130d92.js",
     "service-worker.js": "/instagram-text-converter/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/instagram-text-converter/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.c5142100.chunk.css.map": "/instagram-text-converter/static/css/main.c5142100.chunk.css.map",
+    "static/css/main.bae0b4ee.chunk.css.map": "/instagram-text-converter/static/css/main.bae0b4ee.chunk.css.map",
     "static/media/success.40eb9cc6.svg": "/instagram-text-converter/static/media/success.40eb9cc6.svg"
   }
 }
