@@ -22,7 +22,11 @@ function App() {
 
   const handleCovertClick = event => {
     event.preventDefault();
-    const convertedText = text.replace(/\s*\n{2,}/g, '\n⠀\n').replace(/\s+\n/g, '\n');
+    const convertedText = 
+    text
+    .replace(/⠀/g, '')
+    .replace(/\s*\n{2,}/g, '\n⠀\n')
+    .replace(/\s+\n/g, '\n');
     setConvertedText(convertedText);
     setDisabled(false);
   };
