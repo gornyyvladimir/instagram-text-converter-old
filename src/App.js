@@ -20,18 +20,17 @@ function App() {
     setText(event.target.value);
   };
 
-  const handleCovertClick = event => {
+  const handleCovert = event => {
     event.preventDefault();
-    const convertedText = 
-    text
-    .replace(/⠀/g, '')
-    .replace(/\s*\n{2,}/g, '\n⠀\n')
-    .replace(/\s+\n/g, '\n');
+    const convertedText = text
+      .replace(/⠀/g, '')
+      .replace(/\s*\n{2,}/g, '\n⠀\n')
+      .replace(/\s+\n/g, '\n');
     setConvertedText(convertedText);
     setDisabled(false);
   };
 
-  const handleCopyClick = event => {
+  const handleCopy = event => {
     event.preventDefault();
     textareaRef.current.select();
     document.execCommand('copy');
@@ -50,11 +49,11 @@ function App() {
       <div className="container">
         <h1 className="title">Как сделать абзац в инстаграм?</h1>
         <p className="text">
-          Этот инструмент поможет вам добавить специальный пробел в инстаграм, чтобы ваши
-          описания в инстаграм могли начинаться с новой строки.
+          Этот инструмент поможет вам добавить специальный пробел в инстаграм, чтобы ваши описания в
+          инстаграм могли начинаться с новой строки.
         </p>
         <div className="wrapper">
-          <form className="form">
+          <form className="form" onSubmit={handleCovert}>
             <label className="label" htmlFor="text">
               Текст, который вы хотите преобразовать
             </label>
@@ -66,12 +65,13 @@ function App() {
               placeholder="Пожалуйста, введите текст"
               rows="5"
               cols="30"
+              required
             />
-            <button className="button" type="submit" onClick={handleCovertClick}>
+            <button className="button" type="submit">
               Конвертировать
             </button>
           </form>
-          <form className="form">
+          <form className="form" onSubmit={handleCopy}>
             <label className="label" htmlFor="converted-text">
               Преобразованный текст
             </label>
@@ -86,7 +86,7 @@ function App() {
               cols="30"
               readOnly
             />
-            <button className="button" type="submit" onClick={handleCopyClick} disabled={disabled}>
+            <button className="button" type="submit" disabled={disabled}>
               Копировать
             </button>
           </form>
