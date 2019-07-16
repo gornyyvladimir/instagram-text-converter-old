@@ -8,5 +8,6 @@ body {
 
 .vk-comments-container {
   padding: 1em;
+  padding-top: 0;
   box-sizing: border-box;
 }
