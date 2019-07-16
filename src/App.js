@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { convertText } from './helpers';
 import Notification from './components/Notification';
 import './App.css';
 
@@ -22,10 +23,7 @@ function App() {
 
   const handleCovert = event => {
     event.preventDefault();
-    const convertedText = text
-      .replace(/⠀/g, '')
-      .replace(/\s*\n{2,}/g, '\n⠀\n')
-      .replace(/\s+\n/g, '\n');
+    const convertedText = convertText(text);
     setConvertedText(convertedText);
     setDisabled(false);
   };
