@@ -44,7 +44,7 @@ function App() {
       <Notification show={notificationState}>
         Текст скопирован! Вставьте его в Instagram.
       </Notification>
-      <div className="container">
+      <div>
         <h1 className="title">Как сделать абзац в инстаграм?</h1>
         <p className="text">
           Этот инструмент поможет вам добавить специальный пробел в инстаграм, чтобы ваши описания в

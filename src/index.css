@@ -6,8 +6,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.vk-comments-container {
+.container {
   padding: 1em;
-  padding-top: 0;
-  box-sizing: border-box;
 }

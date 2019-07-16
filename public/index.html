@@ -52,7 +52,15 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="container">
+      <div id="root"></div>
+      <!-- VK Comments -->
+      <div id="vk_comments"></div>
+      <script type="text/javascript">
+        VK.Widgets.Comments('vk_comments', { limit: 5, attach: '*' });
+      </script>
+      <!-- /VK Comments -->
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -63,10 +71,4 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <!-- VK Comments -->
-    <div class="vk-comments-container" id="vk_comments"></div>
-    <script type="text/javascript">
-      VK.Widgets.Comments('vk_comments', { limit: 5, attach: '*' });
-    </script>
-    <!-- /VK Comments -->
 </html>
