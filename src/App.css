@@ -12,6 +12,10 @@
   font-weight: lighter;
 }
 
+.text--margin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;

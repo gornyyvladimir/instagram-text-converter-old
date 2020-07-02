@@ -89,7 +89,7 @@ function App() {
             </button>
           </form>
         </div>
-        <p className="text">
+        <p className="text text--margin-bottom-2">
           Количество символов: <b>{text.length}</b>
           <br />
           Максимальное количество символов в посте Instagram: <b>2200</b>
